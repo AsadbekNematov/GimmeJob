@@ -7,6 +7,7 @@ import logo from '../assets/logo_gimmejob.jpeg';
 import { db } from '../firebase';
 import { NavLink } from "react-router-dom"; // Assuming you're using react-router-dom for navigation
 import "./loading.css";
+import OPENAI_API_KEY from "./apikey.js"
 
 function Question() {
   const [jobPositions, setJobPositions] = useState([]);
@@ -105,7 +106,7 @@ function Question() {
     ////////////////////////////////////////////////////////////////////////////////////////
 
     
-    const API_KEY = "YOUR_API_KEY";
+    const API_KEY = OPENAI_API_KEY;
 
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////////////////////////////////////////////////  
